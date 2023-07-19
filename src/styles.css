@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+h1{
+font-size: 128px;
+color: white;
+margin: 10px auto;
+}
+h2{
+font-size: 40px;
+}
+h3{
+    margin-top: 150px;
+    font-size: 18px;
+}
+
+.hero{
+
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(35, 24, 24, 0.5)),
+            url("src/images/Anitta.png");
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    width: 1208px;
+    height: 580px;
+    margin: 0 auto;
+}
+
