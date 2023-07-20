@@ -1,29 +1,96 @@
-body{
+
+.container{
+    max-width: 1400px;
     text-align: center;
-}
-h1{
-font-size: 128px;
-color: white;
-margin: 10px auto;
-}
-h2{
-font-size: 40px;
-}
-h3{
-    margin-top: 150px;
-    font-size: 18px;
-}
-
-.hero{
-
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(35, 24, 24, 0.5)),
-            url("src/images/Anitta.png");
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    width: 1208px;
-    height: 580px;
     margin: 0 auto;
 }
+header{
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(35, 24, 24, 0.75)),
+            url('images/Anitta.png');
+    background-size: cover;
+    background-position: center;
+    padding: 260px 0;
+    background-repeat: no-repeat;
+    
 
+}
+header h1 {
+    font-size: 128px;
+    color: white;
+    margin: 0 auto;
+    font-family:'Playfair Display', serif;
+    line-height: 170.62px;
+}
+
+header h2 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 46.88px;
+    margin: 0;
+    margin-bottom: 70px;
+            
+}
+
+header h3 {
+    font-weight: 900;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 28.13px;
+    letter-spacing: 5px;
+    margin:0;
+    
+}
+
+
+header a {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#anitta-vertical-picture{
+    display: block;
+    background-position: cover;
+    width: 100%;
+    margin:0 0 0 148px;
+    
+}
+
+@media (max-width:800px){
+    header{
+        padding: 30px 0;
+    }
+    header h1{
+        font-size: 60px;
+        line-height: 80px;
+    }
+    header h2{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom:20px;
+    }
+    header h3{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    header a{
+        padding:5px 10px;
+        font-size: 10px;
+    }
+}
