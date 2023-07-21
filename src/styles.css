@@ -4,6 +4,20 @@
     text-align: center;
     margin: 0 auto;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 40px;
+
+
+}
+
+section{
+    max-width:1400px ;
+    margin: 0 auto;
+}
+
 header{
     color: white;
     background-image:linear-gradient(rgba(0, 0, 0, 0.45),
@@ -59,20 +73,46 @@ header a {
 
 }
 
-.grid-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#anitta-vertical-picture{
-    display: block;
-    background-position: cover;
-    width: 100%;
-    margin:0 0 0 148px;
+footer{
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)),
+    url("images/footer.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 170px;
+    text-align: left;
     
 }
 
-@media (max-width:800px){
+footer h3{
+    font-family: 'Play Fair', serif;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+footer p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    opacity: .7;
+    margin-right: 40px;
+}
+
+footer a{
+    opacity: .7;
+    color: white;
+
+}
+ul{
+    padding-inline-start: 0;
+}
+footer li{
+    list-style-type: none;
+}
+@media (max-width:960px){
     header{
         padding: 30px 0;
     }
@@ -92,5 +132,12 @@ header a {
     header a{
         padding:5px 10px;
         font-size: 10px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        padding:50px 75px
     }
 }
