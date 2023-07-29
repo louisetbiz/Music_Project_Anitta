@@ -201,6 +201,8 @@ main p{
 
 main img{
     width: 100%;
+    filter: grayscale(5);
+    filter: contrast(.1);
 }
 
 footer{
