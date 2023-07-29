@@ -36,7 +36,7 @@ section.secondary{
         position: center;
         margin:0 auto;
         background-repeat: no-repeat;
-        padding: 64px;     
+        padding: 64px 64px 100px 64px;     
 }
 .first-section{
     filter: grayscale(4);
